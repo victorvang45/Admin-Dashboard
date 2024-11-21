@@ -32,12 +32,16 @@
     
     grid-template-columns: 2fr 1fr;
 
-    padding: 2rem 1rem;
     
 }
 
 .project-container {
     box-sizing: border-box;
+    padding: 2rem;
+}
+
+.project-container h3 {
+    padding-bottom: 14px;
 }
 .projects {
     grid-column-start: 1;
@@ -46,14 +50,50 @@
     grid-row-end: 4;
 
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
     gap: 1rem;
+    height: 96%;
 }
 .projects .card {
     background-color: white;
     text-align: center;
     color: black;
-    height: 200px;
     padding: 15px;
 
+}
+
+.feed {
+    display: grid;
+    grid-template-rows: 0.3fr 3fr 0.3fr 3fr;
+    padding: 2rem;
+}
+
+.announcements {
+    
+    padding-bottom: 40px;
+    
+}
+
+.announcement  {
+    background-color: white;
+    padding: 20px 20px 0 20px;
+}
+.announcement h4, .announcement p {
+    padding: 0 10px;
+}
+
+.announcement h4 {
+    padding-top: 20px;
+}
+.announcement p{
+    padding-bottom: 20px;
+}
+
+.trend {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
 }
