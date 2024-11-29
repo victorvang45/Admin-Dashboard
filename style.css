@@ -235,8 +235,8 @@ input {
 }
 
 .notification-container .profile-picture {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .trending .profile-picture {
@@ -271,8 +271,32 @@ input {
 
 .card {
     background-color: white;
-    text-align: center;
+    text-align: left;
     color: black;
     border-left: 0.8rem solid #f59e0b;
     box-shadow: 0.5px 2px 3px rgba(0, 0, 0, 0.15);
+
+    display:flex;
+    flex-direction: column;
+}
+
+.description {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 1.5rem 1rem;
+}
+
+.icons {
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 15px;
+    justify-content: flex-end;
+}
+
+.icons .img-container img{
+
+    height: 1.5rem;
+
 }
